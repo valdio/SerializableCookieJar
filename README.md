@@ -42,8 +42,19 @@ OkHttpClient client = new OkHttpClient.Builder()
         .cookieJar(serializableCookieJar)
         .build();
 
-```sdsdsdsdsdsds##
+```
+### Extra features 
 
+1. Clear all Cookies
+
+```java
+serializableCookieJar.clearCookies();
+```
+2. Clear Expired Cookies
+
+```java
+serializableCookieJar.clearExpiredCookies(); //still work in progress  
+```
 
 ### License
 
